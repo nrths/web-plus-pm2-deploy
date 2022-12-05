@@ -21,7 +21,7 @@ module.exports = {
       path: DEPLOY_PATH,
       // eslint-disable-next-line max-len
       'pre-deploy-local': `eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa && scp e:/Ya.Practicum/dev/web-plus-pm2-deploy/backend/.env* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/source/backend`,
-      'post-deploy': 'cd ~/web-plus-pm2-deploy/backend/source/backend/ && npm run build && pm2 restart ecosystem.config.js',
+      'post-deploy': 'cd ~/web-plus-pm2-deploy/backend/source/backend/ && npm install && npm run build && pm2 restart ecosystem.config.js',
     },
   },
 };
