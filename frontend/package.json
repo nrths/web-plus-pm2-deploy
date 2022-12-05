@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && scp -Cr e:/Ya.Practicum/dev/web-plus-pm2-deploy/frontend/build/* north@158.160.48.41:/home/north/web-plus-pm2-deploy/mesto-frontend"
   },
   "eslintConfig": {
     "extends": [
