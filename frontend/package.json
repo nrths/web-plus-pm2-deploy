@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "cd e:/Ya.Practicum/dev/web-plus-pm2-deploy/frontend && npm run build && scp -Cr e:/Ya.Practicum/dev/web-plus-pm2-deploy/frontend/build/* north@158.160.48.41:/home/frontend-mesto"
+    "deploy": "cd e:/Ya.Practicum/dev/web-plus-pm2-deploy/frontend && npm run build && scp -Cr e:/Ya.Practicum/dev/web-plus-pm2-deploy/frontend/build/* north@158.160.48.41:/home/north/frontend-mesto"
   },
   "eslintConfig": {
     "extends": [
